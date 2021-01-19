@@ -7,7 +7,7 @@
     <p>{{ .Title }}</p>
 
     {{ range .Pages }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ end }}
 
 {{ end }}
