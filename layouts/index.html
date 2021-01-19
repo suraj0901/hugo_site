@@ -1,0 +1,13 @@
+{{ define "head" }}
+    <title>{{ .Title }}</title>
+{{ end }}
+
+{{ define "main"}}
+
+    <p>{{ .Title }}</p>
+
+    {{ range .Pages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+
+{{ end }}
